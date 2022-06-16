@@ -1,4 +1,6 @@
-## 该项目已停止开发，不再新增功能，十分欢迎开发同学贡献PR。本项目适合有vue+go开发经验的同学作为二次开发框架，不适合小白用户使用，请慎重选择！
+## 本项目基于https://github.com/linclin/gopub 项目，感谢gopub项目的杰出贡献。由于gopub项目已停止开发，不再新增功能，因此希望对gopub项目持续改进和发展。
+
+本项目适合有vue+go开发经验的同学作为二次开发框架，不适合小白用户使用，请慎重选择！
 
 gopub（基于vue.js element框架+golang beego框架开发）是一个基于运维场景设计的企业级运维发布系统。配置简单、功能完善、界面流畅、开箱即用！支持git、jenkins版本管理，支持各种web代码发布，一键完成Golang,nodejs,PHP，Python，JAVA等代码的发布、回滚操作。
 
@@ -11,8 +13,6 @@ gopub已持续运行近两年时间,在我们预发布和生产环境完成37000
 * [开源中国码云 https://gitee.com/dev-ops/gopub](https://gitee.com/dev-ops/gopub)
 * [Github https://github.com/linclin/gopub](https://github.com/linclin/gopub) 
 
-## demo地址(Docker部署,账号admin 密码123456)
-公网测试环境:http://140.143.85.18:8192/
 ## 使用框架
 * [Element](http://element-cn.eleme.io/#/zh-CN)
 * [Beego](https://beego.me/)
@@ -35,7 +35,8 @@ gopub已持续运行近两年时间,在我们预发布和生产环境完成37000
 ## Docker 快速启动
 ``` shell
 #使用dockerhub镜像启动,连接外部数据库
-sudo docker run --name gopub -e MYSQL_HOST=x.x.x.x -e MYSQL_PORT=3306  -e MYSQL_USER=root -e MYSQL_PASS=123456 -e MYSQL_DB=walle -p 8192:8192  --restart always  -d   lc13579443/gopub:latest 
+sudo docker run --name gopub -e MYSQL_HOST=x.x.x.x -e MYSQL_PORT=3306  -e MYSQL_USER=root -e MYSQL_PASS=
+-e MYSQL_DB=walle -p 8192:8192  --restart always  -d   lc13579443/gopub:latest 
 
 #使用dockerhub镜像启动,连接Docker数据库
 sudo docker run --name gopub-mysql -h gopub-mysql  -p 3306:3306  -v /data/gopub-mysql:/var/lib/mysql -v /etc/localtime:/etc/localtime -e MYSQL_ROOT_PASSWORD=123456  --restart always -d mysql:5.7.24 --character-set-server=utf8mb4 --collation-server=utf8mb4_unicode_ci
@@ -128,7 +129,7 @@ su {local_user} && ssh-copy-id -i ~/.ssh/id_rsa.pub remote_user@remote_server
 ```
 
 
-## Getting started
+## 界面基本操作
 ### 1. 项目配置
 
 ![项目配置](docs/images/project.png)
@@ -181,8 +182,6 @@ su {local_user} && ssh-copy-id -i ~/.ssh/id_rsa.pub remote_user@remote_server
 * 金阳
 * 赵连启
 * 张群烽
- 
-## 下个版本计划
-* 待定
+
 
  
