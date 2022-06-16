@@ -307,3 +307,4 @@ OpenCover/
 src/swagger
 src/src
 vue-gopub/package-lock.json
+.vscode

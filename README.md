@@ -1,4 +1,6 @@
-## 本项目基于https://github.com/linclin/gopub 项目，感谢gopub项目的杰出贡献。由于gopub项目已停止开发，不再新增功能，因此希望对gopub项目持续改进和发展。
+## 本项目基于https://github.com/linclin/gopub 项目
+
+感谢gopub项目的杰出贡献。由于gopub项目已停止开发，不再新增功能，因此希望对gopub项目持续改进和发展。
 
 本项目适合有vue+go开发经验的同学作为二次开发框架，不适合小白用户使用，请慎重选择！
 
