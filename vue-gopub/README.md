@@ -13,16 +13,19 @@
 *  webpack
 *  mock
 
-### 安装
+### 安装(2022, June)
 
 ***
 项目地址: (`git clone`)
 ```shell
 git clone https://github.com/zzmhot/vue-admin.git
 ```
-通过`npm`安装本地服务第三方依赖模块(需要已安装[Node.js](https://nodejs.org/))
+通过`npm`安装本地服务第三方依赖模块(需要已安装[Node.js](https://nodejs.org/))。 node版本应>=4.0， <=14
 
 ```
+npm config set registry http://registry.npm.taobao.org
+npm install -g node-gyp 
+npm install node-sass  sass-loader --save-dev --disturl=https://npm.taobao.org/dist --sass_binary_site=https://npm.taobao.org/mirrors/node-sass/ 
 npm install
 ```
 启动服务: (http://localhost:3000)

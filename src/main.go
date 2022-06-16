@@ -2,16 +2,16 @@ package main
 
 import (
 	"fmt"
+	"os"
+	"os/signal"
+	"syscall"
+
 	"github.com/astaxie/beego"
 	"github.com/astaxie/beego/orm"
 	"github.com/astaxie/beego/toolbox"
 	_ "github.com/go-sql-driver/mysql"
-	"github.com/linclin/gopub/src/library/p2p/init_sever"
 	"github.com/linclin/gopub/src/models"
 	_ "github.com/linclin/gopub/src/routers"
-	"os"
-	"os/signal"
-	"syscall"
 )
 
 func initArgs() {
@@ -136,7 +136,7 @@ func main() {
 
 	beego.Info(beego.BConfig.RunMode)
 	if beego.BConfig.RunMode != "docker" {
-		init_sever.Start()
+		// TODO init_sever.Start()
 	}
 	beego.Run()
 }
